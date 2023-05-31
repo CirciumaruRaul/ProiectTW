@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LogedIn</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <header>
+            <a onclick="fetchPostari()">Toate postarile</a>
+            <a style="font-size: x-large;" class = "posteaza">Posteaza</a>
+            <a href="../index.html">Log Out</a>
+        </header>
+        <div class="wrapper inactive">
+            <span class ="icon-close"><ion-icon name="close"></ion-icon>
+            </span>
+        <div class="form-box">
+            
+            <h2>Posteaza</h2>
+            <form id = "form">
+                <div class="input-box">
+                    <input id="t" type="text" placeholder="Titlu" required>
+                </div>
+                <div class="input-descriere">
+                    <textarea id="d" name="descriere" cols = "42" rows="13" placeholder="Descriere" required></textarea>
+                </div>
+                <button onclick="addPostare()" id = "log" class = "btn">Posteaza</button>
+            </form>
+        </div>
+        </div>
+        <div id="postari" class="postari">
+            
+        </div>
+        <script src="logedin.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>

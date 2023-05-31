@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <h1></h1>
+        <h1></h1>
+        <a href="../index.html">Log Out</a>
+    </header>
+    <div id="container">
+        <h1>Click pe ce actiune doriti</h1>
+        <div class="wrapper">
+            <button class="create">Create</Button>
+            <button class="read" onclick="fetchUser()">Read</button>
+            <button class="update">Update</button>
+        </div>
+        <div class = "ur inactive">
+            <h2 class = "update-text">Introduceti Datele</h2>
+            <input id = "username" type="text" placeholder="username" required>
+            <input id = "email-nou" type="email" placeholder="email-nou" required>
+            <input id = "parola-noua" type="password" placeholder="parola-noua" required  minlength="8">
+            <button class = "modifica" onclick="editUser()">Modifica!</button>
+        </div>
+        <div id = "content" class = "show inactive">
+            <input class = "usr inactive" type="text" placeholder="username" required>
+            <input class = "eml inactive" type="email" placeholder="email" required>
+            <input class = "pas inactive" type="password" placeholder="password" required>
+            <button class = "trimite" onclick="addUser()">Trimite!</button>
+        </div>
+    </div>
+
+    <script src = "dasboard.js"></script>
+</body>
+
+</html>

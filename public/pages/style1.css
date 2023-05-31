@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index:99;
+}
+
+.logo{
+    color: #fff;
+}
+
+a{
+    position:relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+a::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+a:hover::after{
+    transform: scaleX(1);
+}
+.wrapper{
+    display: flex;
+}
+
+.wrapper > button{
+    margin: 30px;
+    font-size: larger;
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid rgba(255, 255 , 255, 0.5);
+    border-radius: 20px;  
+    backdrop-filter: blur(20px);  
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+} 
+
+.create:hover{
+    cursor: pointer;
+    background: green;
+}
+
+.read:hover{
+    cursor: pointer;
+    background: blue;
+}
+.update:hover{
+    cursor: pointer;
+    background: violet;
+}
+.delete:hover{
+    cursor: pointer;
+    background: red;
+}
+
+.show.inactive{
+    display: none;
+}
+.usr.inactive{
+    display: none;
+}
+.eml.inactive{
+    display: none;
+}
+.pas.inactive{
+    display: none;
+}
+.date.inactive{
+    display: none;
+}
+.trimite.inactive{
+    display: none;
+}
+.ur.inactive{
+    display: none;
+}
+
+.show > input{
+    width: 190px;
+    height: 35px;
+    border: 2px solid rgba(255, 255 , 255, 0.5);
+    border-radius: 20px;  
+    backdrop-filter: blur(20px);  
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.show > button{
+    font-size: larger;
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid rgba(255, 255 , 255, 0.5);
+    border-radius: 20px;  
+    backdrop-filter: blur(20px);  
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.dl.inactive{
+    display: none;
+}
+
+.dl > input{
+    width: 220px;
+    height: 35px;
+    border: 2px solid rgba(255, 255 , 255, 0.5);
+    border-radius: 20px;  
+    backdrop-filter: blur(20px);  
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    background: transparent;
+    border-radius: 5px;
+}
+.dl > button{
+    font-size: larger;
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid rgba(255, 255 , 255, 0.5);
+    border-radius: 20px;  
+    backdrop-filter: blur(20px);  
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+
+#container{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-text{
+    background: transparent;
+    border: 2px solid rgba(255, 255 , 255, 0.5);
+    border-radius: 10px;  
+    backdrop-filter: blur(10px);  
+    margin-bottom: 10px;
+}
+
+.ur > input{
+    width: 190px;
+    height: 35px;
+    border: 2px solid rgba(255, 255 , 255, 0.5);
+    border-radius: 20px;  
+    backdrop-filter: blur(20px);  
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.modifica{
+    font-size: larger;
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: fit-content;
+    background: transparent;
+    border: 2px solid rgba(255, 255 , 255, 0.5);
+    border-radius: 20px;  
+    backdrop-filter: blur(20px);  
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
